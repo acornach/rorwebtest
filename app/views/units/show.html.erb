@@ -1,0 +1,16 @@
+<h1>Unit</h1>
+<p>
+  <strong>Unit Title:</strong>
+  <%= @unit.title %>
+</p>
+
+<h2>Chapters</h2>
+  <%= render @unit.chapters %>
+
+
+<h2>Add a Chapter</h2>
+<%= render "chapters/form" %>
+
+
+ <%= link_to 'Back', units_path %>
+| <%= link_to 'Edit', edit_unit_path(@unit) %>

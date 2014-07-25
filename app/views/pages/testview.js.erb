@@ -1,0 +1,7 @@
+$('#my-units').append('<%= j render @units %>');
+<% if @units.next_page %>
+  $('.pagination').replaceWith('<%= j will_paginate @units %>');
+<% else %>
+  $(window).off('scroll');
+  $('.pagination').remove();
+<% end %>

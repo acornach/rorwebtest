@@ -1,0 +1,11 @@
+<p>
+  <strong>Chapter:</strong>
+  <%= chapter.title %>
+</p>
+
+<p>
+ <%= link_to 'Destroy Chapter', [chapter.unit, chapter],
+	method: :delete,
+	data: { confirm: 'Are you sure?'} %>
+</p>
+

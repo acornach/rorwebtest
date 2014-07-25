@@ -1,0 +1,11 @@
+<h1>Pages#testview</h1>
+<strong>UNIT</strong>
+<div class="my-units">
+<% @units.each do |unit| %>
+      <%= unit.title %><br />
+<%end%>
+</div>
+ 
+<div id="infinite-scrolling">
+  <%= will_paginate(@units) %>
+</div>

@@ -1,0 +1,19 @@
+<h1>List All Units, Chapters, and Bullets</h1>
+<strong>UNIT</strong>
+<%= @units.each do |unit| %>
+<p>
+<strong><%=unit.title%></strong>
+<%= unit.chapters.each do |chapter| %>
+<p>
+<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%=chapter.title%></strong>
+<%= chapter.bullets.each do |bullet| %>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>-></strong>
+<%= bullet.content %>
+</p>
+<% end %>
+</p>
+<% end %>
+</p>
+
+<% end %>

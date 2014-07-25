@@ -1,0 +1,33 @@
+<h1>Chapter</h1>
+<p>
+  <strong>Chapter Title:</strong>
+  <%= @chapter.title %>
+</p>
+
+<h2>Bullets</h2>
+<% @chapter.bullets.each do |bullet| %>
+  <p>
+    <strong>-></strong>
+    <%= bullet.content%>
+  </p>
+<p>
+  <%= link_to 'Destroy Bullet', [bullet.chapter, bullet],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
+</p>
+<% end %>
+
+
+<h2>Add a Bullet</h2>
+<%= form_for([@chapter, @chapter.bullets.build]) do |f| %>
+  <p>
+    <%= f.label :content %><br>
+    <%= f.text_field :content %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+ <%= link_to 'Back', chapters_path %>
+| <%= link_to 'Edit', edit_chapter_path(@chapter) %>
