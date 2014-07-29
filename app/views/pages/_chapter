@@ -1,6 +1,9 @@
-<div class="chapterDiv">
+
+
+
+<div class="chapterDiv" id="chapterDiv_">
 	<%= chapter.title %>
-	<div class="scrollBullets">
+	<div class="scrollBullets" id="scrollBullets_">
 		<span class="text-content"><span>
 	<% chapter.bullets.each do |bullet|%>
 		*&nbsp;<%=link_to bullet.content, '#'%><br />
@@ -9,4 +12,3 @@
 	</span>
 	</div>
 </div>
-

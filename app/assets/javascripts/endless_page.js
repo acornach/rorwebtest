@@ -12,8 +12,9 @@ function checkScroll() {
 		}
 	},});
 	}
-
 };
+
+
 
 function nearBottomOfPage() {
 	return scrollDistanceFromBottom() < 150;
@@ -32,5 +33,14 @@ $('document').ready(function(){
 	//window.setInterval(function(){
   //checkScroll();
 //}, 250);
-	
+
+$('ul li').mouseenter(function(){
+        caption = $(this).find('div');
+
+    caption.fadeIn();
+}).mouseleave(function(){
+        caption = $(this).find('div');
+    caption.fadeOut();
+});
+
 });

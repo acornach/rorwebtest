@@ -30,22 +30,40 @@ h1 {
 }
 .chapterList {
 
-	overflow-x: auto;
+	overflow: hidden;
     height: 80px;
     white-space:nowrap;
     display: inline-block;
+	list-style-type: none;
 }
 
 .chapterDiv {
-	display: inline;
-	margin-left: 15px;
+	z-index:-1;
+	display: inline-block;
+	margin-left: 10px;
+	width: 350px; 
+    height: 250px;
+	overflow: hidden;
 }
 
 .chapterDiv .scrollBullets {
-	display: none;
+	z-index:1001;
+	visibility: hidden;
+	overflow: hidden;
 }
 
 .chapterDiv:hover .scrollBullets {
-	position: absolute;
-	display: block;
+	overflow: hidden;
+	visibility: visible;
+	z-index:1001;
+	padding: 5px; margin: 5px;
+   color: #AAA; background: black;
+   font: 12px Verdana, sans-serif;
 }
+   
+
+
+
+
+
+
