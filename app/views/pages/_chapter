@@ -1,0 +1,12 @@
+<div class="chapterDiv">
+	<%= chapter.title %>
+	<div class="scrollBullets">
+		<span class="text-content"><span>
+	<% chapter.bullets.each do |bullet|%>
+		*&nbsp;<%=link_to bullet.content, '#'%><br />
+	<%end%>
+	</span>
+	</span>
+	</div>
+</div>
+

@@ -1,1 +1,10 @@
-<%= page.title %><br /><%= page.title %><br /><%=page.title%><br /><%= page.title %><br /><%= page.title %><br /><%=page.title%><br />
+<div class="innerDiv">
+<br />
+<strong><%= page.title %></strong>
+</div>
+<div>
+	<div class="horizontal chapterList">
+		<% @chapters = page.chapters%>
+			<%= render partial: "chapter", collection: @chapters %>
+	</div>
+</div>
