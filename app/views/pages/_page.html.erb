@@ -3,8 +3,10 @@
 <strong><%= page.title %></strong>
 </div>
 <div>
-	<div class="horizontal chapterList">
-		<% @chapters = page.chapters%>
-			<%= render partial: "chapter", collection: @chapters %>
+	<div class = "carouselWrapper">
+		<div class="horizontal chapterList carousel-demo1">
+			<% @chapters = page.chapters%>
+				<%= render partial: "chapter", collection: @chapters %>
+		</div>
 	</div>
 </div>

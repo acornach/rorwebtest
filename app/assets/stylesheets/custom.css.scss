@@ -28,10 +28,17 @@ h1 {
 .horizontal {
 	display: block;
 }
-.chapterList {
 
+.chapterListWrapper {
+	overflow: hidden;
+	height: 75;
+	width: 195;
+}
+
+.chapterList {
 	overflow: hidden;
     height: 80px;
+	width: 200;
     white-space:nowrap;
     display: inline-block;
 	list-style-type: none;
@@ -42,22 +49,33 @@ h1 {
 	display: inline-block;
 	margin-left: 10px;
 	width: 350px; 
-    height: 250px;
+    height: 120px;
 	overflow: hidden;
+
 }
 
 .chapterDiv .scrollBullets {
 	z-index:1001;
+	width: 350px; 
+    height: 120px;
 	visibility: hidden;
 	overflow: hidden;
+
+}
+
+.carousel-demo1 {
+	width: 100%;
+	float:left;
 }
 
 .chapterDiv:hover .scrollBullets {
 	overflow: hidden;
 	visibility: visible;
 	z-index:1001;
+	height: 200px;
+	width: 350px;
 	padding: 5px; margin: 5px;
-   color: #AAA; background: black;
+   color: black; background: grayLight;
    font: 12px Verdana, sans-serif;
 }
    

@@ -61,13 +61,13 @@
             }
             switch (b.scrollSpeed.toLowerCase()) {
                 case "slow":
-                    p = 1;
+                    p = 3;
                     break;
                 case "fast":
                     p = 4;
                     break;
                 default:
-                    p = 2
+                    p = 0
             }
             var g = 0,
                 t = 0,
@@ -261,12 +261,12 @@
         looped: !0,
         scrollerAlignment: "horizontal",
         scrollerOffset: 0,
-        scrollSpeed: "medium",
+        scrollSpeed: "slow",
         beforeCreateFunction: null,
         afterCreateFunction: null
     }
 })(jQuery);
 
 $('document').ready(function(){
-$('#carousel-demo1').scrollingCarousel();
+$('.carousel-demo1').scrollingCarousel();
 });

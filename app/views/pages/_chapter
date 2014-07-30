@@ -1,7 +1,7 @@
 
 
-
-<div class="chapterDiv" id="chapterDiv_">
+<div>
+	<div class="chapterDiv" id="chapterDiv_">
 	<%= chapter.title %>
 	<div class="scrollBullets" id="scrollBullets_">
 		<span class="text-content"><span>
@@ -11,4 +11,5 @@
 	</span>
 	</span>
 	</div>
+</div>
 </div>

@@ -12,6 +12,7 @@ function checkScroll() {
 		}
 	},});
 	}
+	$('.carousel-demo1').scrollingCarousel();
 };
 
 
@@ -33,6 +34,7 @@ $('document').ready(function(){
 	//window.setInterval(function(){
   //checkScroll();
 //}, 250);
+
 
 $('ul li').mouseenter(function(){
         caption = $(this).find('div');

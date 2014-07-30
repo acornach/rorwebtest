@@ -1,0 +1,50 @@
+<div class="chapterDiv">
+	<ul>
+		<li>
+			<%= chapter.title %>
+			<div class="bulletLinks">
+				<% chapter.bullets.each do |bullet|%>
+					*&nbsp;<%=link_to bullet.content, '#'%><br />
+				<%end%>
+			</div>
+		</li>
+	</ul>
+</div>
+
+
+.chapterDiv {
+	display: inline;
+	margin-left: 15px;
+}
+
+.chapterDiv .scrollBullets {
+	display: none;
+}
+
+.chapterDiv:hover .scrollBullets {
+	position: absolute;
+	display: block;
+}
+
+	$("#chapterDiv_").mouseenter(function() {
+      $("#scrollBullets_").show();
+}).mouseleave(function() {
+      $("#scrollBullets_").hide();
+});
+
+carousel-demo1
+
+
+
+
+<div class="chapterDiv" id="chapterDiv_">
+	<%= chapter.title %>
+	<div class="scrollBullets" id="scrollBullets_">
+		<span class="text-content"><span>
+	<% chapter.bullets.each do |bullet|%>
+		*&nbsp;<%=link_to bullet.content, '#'%><br />
+	<%end%>
+	</span>
+	</span>
+	</div>
+</div>
